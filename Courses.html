@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UG Sharma Classes - Premier coaching institute offering quality education from primary to senior secondary levels. Expert faculty, smart classes, doubt clearing sessions, and career guidance.">
+    <meta name="keywords"
+        content="UG Sharma Classes, coaching institute, education, primary school coaching, secondary school coaching, smart classes, career counseling, exam preparation, quality education">
+     <!-- Standard Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- PNG Icons for Various Sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="images/site.webmanifest">
+
+    
+    <meta name="publisher" content="UG Sharma Classes" />
+    <meta name="creator" content="Naman" />
+    <meta property="og:title" content="UG Sharma Classes - Courses">
+    <meta property="og:description"
+        content="Discover excellence in education with UG Sharma Classes. Comprehensive coaching from Classes 4-12, smart learning, and career guidance.">
+    <meta property="og:type" content="website">
+    <title>Couses | UG Sharma Classes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            will-change: transform, opacity;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #0ea5e9 50%, #38bdf8 75%, #7dd3fc 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            transition: background-position 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Glassmorphism Header */
+        .header {
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(14, 165, 233, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+        }
+
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f8fafc;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #f1f5f9;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 500;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-links a:hover {
+            background: rgba(56, 189, 248, 0.2);
+            color: #7dd3fc;
+            transform: translateY(-2px);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-left: auto;
+            position: relative;
+        }
+
+        .theme-toggle {
+            margin-left: 1.4rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.6rem;
+            padding: 6px 8px;
+            border-radius: 50%;
+            transition: background 0.2s;
+            align-self: flex-end;
+            margin-right: -10px;
+            margin-top: -5px;
+        }
+
+        .theme-toggle:hover,
+        .theme-toggle:focus {
+            background: rgba(56, 189, 248, 0.15);
+            outline: none;
+        }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 4rem 0;
+            color: #f8fafc;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff, #ecf1f8, #7dd3fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #e7ebf0;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+
+        /* Glass Cards */
+        .glass-card {
+            backdrop-filter: blur(20px);
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            box-shadow: 0 8px 32px rgba(14, 165, 233, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(56, 189, 248, 0.1), transparent, rgba(125, 211, 252, 0.08), transparent);
+            opacity: 0;
+        }
+
+        .glass-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.05) 0%, transparent 50%, rgba(125, 211, 252, 0.03) 100%);
+            border-radius: inherit;
+            opacity: 0;
+        }
+
+        .glass-card:hover {
+            box-shadow:
+                0 20px 60px rgba(14, 165, 233, 0.3),
+                0 0 0 1px rgba(56, 189, 248, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            border-color: rgba(56, 189, 248, 0.5);
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .glass-card:hover::after {
+            opacity: 1;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #f8fafc;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .intro-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #e2e8f0;
+            text-align: center;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .course-card {
+            backdrop-filter: blur(15px);
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .course-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(56, 189, 248, 0.2) 50%,
+                    transparent);
+        }
+
+        .course-card::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg,
+                    rgba(56, 189, 248, 0.4),
+                    rgba(125, 211, 252, 0.3),
+                    rgba(14, 165, 233, 0.4));
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0;
+        }
+
+
+        .course-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            color: #f8fafc;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .course-description {
+            font-family: 'Inter', sans-serif;
+            color: #cbd5e1;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .course-features {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .course-features li {
+            font-family: 'Inter', sans-serif;
+            color: #94a3b8;
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+            font-weight: 400;
+        }
+
+        .course-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1eff16;
+            font-weight: bold;
+        }
+
+        /* Cta Section Styling */
+        .cta-section {
+            background: linear-gradient(135deg, #0ea5e9, #0a6f9b);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 4rem auto 2rem;
+            max-width: 1000px;
+            box-shadow: 0 6px 16px rgba(14, 165, 233, 0.3);
+        }
+
+        .cta-section .section-title {
+            font-size: 2.5rem;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: #dde9e9;
+            margin-bottom: 2rem;
+            font-family: 'Inter', sans-serif;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #0ea5e9;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button:hover {
+            background-color: #e0f2fe;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cta-section {
+                padding: 2rem 1.2rem;
+                margin: 3rem 1rem;
+            }
+
+            .cta-section .section-title {
+                font-size: 2rem;
+            }
+
+            .cta-section p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 0.7rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cta-section {
+                padding: 2rem 1rem;
+                margin: 2rem 0.5rem;
+                border-radius: 16px;
+            }
+
+            .cta-section .section-title {
+                font-size: 1.6rem;
+            }
+
+            .cta-section p {
+                font-size: 0.95rem;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 280px;
+                font-size: 1rem;
+            }
+        }
+
+
+
+        /* Footer */
+        /* === Custom Footer Styles === */
+        .custom-footer {
+            background-color: #0f1116;
+            color: white;
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            margin-top: 30px;
+        }
+
+        .footer-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1 1 220px;
+            min-width: 200px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+        }
+
+        .footer-title {
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            margin-top: -1px;
+        }
+
+        .footer-subtext {
+            color: #999999 !important;
+            font-size: 15px !important;
+            margin-top: -7px !important;
+        }
+
+        .footer-description {
+            color: #cccccc !important;
+            font-size: 18px !important;
+            font-weight: 400 !important;
+            line-height: 1.5 !important;
+            opacity: 0.85 !important;
+            margin-top: 40px !important;
+            text-align: left !important;
+            font-family: 'Arial';
+        }
+
+
+        .footer-heading {
+            font-size: 22px;
+            font-family: 'Algerian';
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .footer-links,
+        .footer-contact {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li,
+        .footer-contact li {
+            margin-bottom: 7px;
+            font-size: 15px;
+            color: #e0e6f3;
+            padding: 6px 0 6px 0;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .footer-links li a {
+            text-decoration: none;
+            color: #e0e6f3;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.3s, text-shadow 0.3s;
+            padding-left: 4px;
+            display: inline-block;
+        }
+
+        .footer-links li:hover,
+        .footer-contact li:hover {
+            background: linear-gradient(90deg, #295dfb 0%, #2c354d 100%);
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(41, 93, 251, 0.10);
+            transform: translateX(6px) scale(1.04);
+        }
+
+        .footer-links li a:hover {
+            color: #00bfff;
+            text-shadow: 0 0 8px #00bfff;
+        }
+
+        .footer-contact li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            color: #e0e6f3;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding-left: 6px;
+            padding-right: 25px;
+            display: inline-block;
+        }
+
+        .footer-contact li i {
+            color: #00bfff;
+            font-size: 18px;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .footer-contact li:hover i {
+            color: #fff;
+            text-shadow: 0 0 8px #00bfff;
+        }
+
+        .social-icons {
+            display: flex;
+            max-width: 200px;
+            flex-wrap: wrap;
+            gap: 18px;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            width: 50px;
+            height: 45px;
+            background: linear-gradient(135deg, #232946 60%, #295dfb 100%);
+            border-radius: 50%;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(41, 93, 251, 0.10);
+            transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s, border-color 0.3s;
+            border: 2px solid #232946;
+            position: relative;
+        }
+
+        /* WhatsApp */
+        .social-icons a.whatsapp:hover {
+            background: #25D366;
+            color: #fff;
+            border-color: #25D366;
+            box-shadow: 0 4px 18px #25D36688;
+        }
+
+        /* Facebook */
+        .social-icons a.facebook:hover {
+            background: #1877F3;
+            color: #fff;
+            border-color: #1877F3;
+            box-shadow: 0 4px 18px #1877F388;
+        }
+
+        /* Instagram */
+        .social-icons a.instagram:hover {
+            background: radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            color: #fff;
+            border-color: #d6249f;
+            box-shadow: 0 4px 18px #d6249f88;
+        }
+
+        /* Twitter/X */
+        .social-icons a.twitter:hover {
+            background: #1da1f2;
+            color: #fff;
+            border-color: #1da1f2;
+            box-shadow: 0 4px 18px #1da1f288;
+        }
+
+        /* LinkedIn */
+        .social-icons a.linkedin:hover {
+            background: #0077b5;
+            color: #fff;
+            border-color: #0077b5;
+            box-shadow: 0 4px 18px #0077b588;
+        }
+
+        /* YouTube */
+        .social-icons a.youtube:hover {
+            background: #ff0000;
+            color: #fff;
+            border-color: #ff0000;
+            box-shadow: 0 4px 18px #ff000088;
+        }
+
+        /* Bottom right links */
+        .footer-bottom-links {
+            max-width: 1200px;
+            margin-bottom: 25px;
+            padding: 0 24px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: -35px;
+        }
+
+        .footer-bottom-links a {
+            color: white;
+            text-shadow: 0 0 6px white;
+            text-decoration: none;
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        .footer-bottom-links a:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 10px #00bfff;
+            color: #00bfff;
+        }
+
+        .footer-bottom-bar {
+            border-top: 1px solid #333;
+            margin-top: 10px;
+            padding-top: 14px;
+            text-align: center;
+            font-size: 13px;
+            color: #aaaaaa;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-bottom-links {
+                text-align: center;
+                flex-direction: column;
+                gap: 1px;
+                margin-right: 50px;
+                margin-top: 5px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glassCardEntrance {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+                filter: blur(2px);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: translateY(20px) scale(0.98);
+                filter: blur(5px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(60px) rotateX(-15deg);
+            }
+
+            60% {
+                opacity: 0.8;
+                transform: translateY(-5px) rotateX(5deg);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0) rotateX(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .glass-card {
+                padding: 1.5rem;
+            }
+
+            .main-content {
+                padding: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .nav-right {
+                gap: 0.5rem;
+            }
+
+            .theme-toggle {
+                margin-left: 0.5rem;
+                font-size: 1.4rem;
+                padding: 6px 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus styles for accessibility */
+        .nav-links a:focus,
+        .cta-button:focus,
+        .social-links a:focus {
+            outline: 2px solid #7dd3fc;
+            outline-offset: 2px;
+        }
+
+        /* Light Theme Styles */
+        body[data-theme="light"] {
+            color: #0f172a;
+        }
+
+        body[data-theme="light"] .header {
+            background: rgb(144, 209, 247);
+            border-bottom: 1px solid #bae6fd;
+            box-shadow: 0 8px 24px rgba(14, 165, 233, 0.08);
+        }
+
+        body[data-theme="light"] .nav-links a:hover {
+            background: rgba(14, 165, 233, 0.12);
+            color: #0ea5e9;
+            transform: translateY(-2px);
+        }
+
+        body[data-theme="light"] .logo,
+        body[data-theme="light"] .section-title {
+            color: #0f172a !important;
+            text-shadow: none !important;
+        }
+
+        body[data-theme="light"] .hero-title {
+            background: linear-gradient(135deg, #0ea5e9, #38bdf8, #7dd3fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        body[data-theme="light"] .hero-subtitle,
+        body[data-theme="light"] .intro-text,
+        body[data-theme="light"] .course-description {
+            color: #334155 !important;
+        }
+
+        body[data-theme="light"] .glass-card,
+        body[data-theme="light"] .course-card {
+            background: rgba(255, 255, 255, 0.96);
+            color: #0f172a !important;
+            border-color: #bae6fd;
+            box-shadow: 0 8px 24px rgba(14, 165, 233, 0.08);
+        }
+
+        body[data-theme="light"] .course-title {
+            color: #0ea5e9 !important;
+        }
+
+        body[data-theme="light"] .course-features li {
+            color: #2563eb !important;
+        }
+
+        body[data-theme="light"] .cta-section {
+            background: linear-gradient(135deg, #e0f2fe, #b0e1fc);
+            color: #0f172a;
+        }
+
+        body[data-theme="light"] .cta-section p {
+            color: #464545;
+        }
+
+        body[data-theme="light"] .cta-button {
+            background-color: #0ea5e9;
+            color: #fff;
+        }
+
+        body[data-theme="light"] .cta-button:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Glassmorphism Effect -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="/images/logo.png" alt="UG Sharma Classes Logo" class="logo-img"
+                    style="width:50px;height:52px;border-radius:50%;box-shadow:0 2px 8px rgba(14,165,233,0.18);margin-right:12px;margin-left: -20px;">
+                <div class="logo">UG Sharma Classes</div>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">About UG Sharma Classes</h1>
+            <p class="hero-subtitle">Empowering minds, shaping futures through excellence in education</p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="glass-card">
+            <h2 class="section-title">Our Commitment to Excellence</h2>
+            <p class="intro-text">
+                At UG Sharma Classes, we believe that every student has the potential to achieve greatness.
+                Founded with a vision to provide quality education and nurture young minds, we have been
+                dedicated to academic excellence for years. Our experienced faculty, innovative teaching
+                methodologies, and personalized attention ensure that each student receives the support
+                they need to succeed. We don't just teach subjects; we build confidence, critical thinking
+                skills, and a lifelong love for learning.
+            </p>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="glass-card">
+            <h2 class="section-title">Our Comprehensive Course Offerings</h2>
+
+            <div class="courses-grid">
+                <!-- Primary School Coaching -->
+                <div class="course-card">
+                    <h3 class="course-title">Primary School Level Coaching (Classes 4-5)</h3>
+                    <p class="course-description">
+                        Building strong foundations is crucial for academic success. Our primary level program
+                        focuses on developing core skills in a fun, interactive environment.
+                    </p>
+                    <ul class="course-features">
+                        <li>Interactive learning techniques</li>
+                        <li>Personalized attention for each student</li>
+                        <li>Foundation building in Math, Science, and Languages</li>
+                        <li>Creative learning activities and games</li>
+                        <li>Regular progress monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Secondary School Coaching -->
+                <div class="course-card">
+                    <h3 class="course-title">Secondary School Level Coaching (Classes 6-10)</h3>
+                    <p class="course-description">
+                        Critical years that shape academic trajectory. We provide comprehensive support
+                        for subject mastery and exam preparation.
+                    </p>
+                    <ul class="course-features">
+                        <li>Subject mastery across all disciplines</li>
+                        <li>Proven exam preparation strategies</li>
+                        <li>Engaging multimedia learning techniques</li>
+                        <li>Regular assessments and feedback</li>
+                        <li>Board exam preparation and guidance</li>
+                    </ul>
+                </div>
+
+                <!-- Senior Secondary Coaching -->
+                <div class="course-card">
+                    <h3 class="course-title">Senior Secondary Level Coaching (Classes 11-12)</h3>
+                    <p class="course-description">
+                        Advanced curriculum support for higher secondary students with focus on
+                        competitive exam preparation and career guidance.
+                    </p>
+                    <ul class="course-features">
+                        <li>Advanced curriculum coverage</li>
+                        <li>JEE/NEET/other competitive exam preparation</li>
+                        <li>Career path guidance and counseling</li>
+                        <li>Stream-specific expert faculty</li>
+                        <li>Mock tests and performance analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Smart Classes -->
+                <div class="course-card">
+                    <h3 class="course-title">Smart Classes for All Levels</h3>
+                    <p class="course-description">
+                        Leveraging technology to make learning more engaging, interactive, and effective
+                        for students of all ages.
+                    </p>
+                    <ul class="course-features">
+                        <li>Interactive digital content</li>
+                        <li>Multimedia presentations and videos</li>
+                        <li>Online resources and e-learning materials</li>
+                        <li>Virtual labs and simulations</li>
+                        <li>Real-time doubt clearing sessions</li>
+                    </ul>
+                </div>
+
+                <!-- Doubt Clearing Sessions -->
+                <div class="course-card">
+                    <h3 class="course-title">Doubt Clearing Sessions</h3>
+                    <p class="course-description">
+                        Regular one-on-one and group sessions dedicated to resolving student queries
+                        and ensuring complete concept clarity.
+                    </p>
+                    <ul class="course-features">
+                        <li>Individual attention for specific doubts</li>
+                        <li>Subject-wise expert guidance</li>
+                        <li>Flexible timing for student convenience</li>
+                        <li>Problem-solving techniques</li>
+                        <li>Confidence building approach</li>
+                    </ul>
+                </div>
+
+                <!-- Career Counseling -->
+                <div class="course-card">
+                    <h3 class="course-title">Career Counseling & Guidance</h3>
+                    <p class="course-description">
+                        Professional guidance to help students make informed decisions about their
+                        academic and career paths.
+                    </p>
+                    <ul class="course-features">
+                        <li>Aptitude and interest assessment</li>
+                        <li>Career options exploration</li>
+                        <li>College and university guidance</li>
+                        <li>Entrance exam strategy planning</li>
+                        <li>Industry insights and trends</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2 class="section-title">Ready to Begin Your Journey?</h2>
+            <p>
+                Join thousands of successful students who have achieved their dreams with UG Sharma Classes
+            </p>
+            <a href="enroll page.html" class="cta-button">Enroll Now</a>
+        </section>
+    </main>
+
+    <!--Footer Starts-->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <!-- Logo & Description -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="/images/logo.png" alt="UG Logo" class="footer-logo-img">
+                    <div>
+                        <h3 class="footer-title">UG Sharma Classes</h3>
+                        <p class="footer-subtext">Excellence in Education</p>
+                    </div>
+                </div>
+                <p class="footer-description">
+                    Leading coaching institute dedicated to academic excellence and student success for more
+                    than 10
+                    years.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="Testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enroll page.html">Enroll Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://whatsapp.com/channel/0029VbAwN2Y2kNFmk7hMjp44" class="whatsapp"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61574797906927" class="facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ug_sharma_classes/" class="instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/UGSharmaClasses" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCnQkp59gl8kYSwRT4R4Mi_A" class="youtube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-column">
+                <h4 class="footer-heading">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Govt. Colony, Gomia, Bokaro 829112</li>
+                    <li><i class="fas fa-phone"></i> +91 9798484689</li>
+                    <li><i class="fas fa-envelope"></i> ugsharma412@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-links">
+            <a href="terms and conditions.html">Terms and Conditions</a>
+            <a href="private policy.html">Privacy Policy</a>
+        </div>
+
+        <div class="footer-bottom-bar">
+            &copy; 2025 UG Sharma Classes. All rights reserved. | Designed with ❤️ for student success.
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeToggle = document.getElementById("themeToggle");
+            const themeIcon = themeToggle.querySelector(".theme-icon");
+            const darkTheme = {
+                bodyBg: "linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #0ea5e9 50%, #38bdf8 75%, #7dd3fc 100%)",
+                headerBg: "rgba(15, 23, 42, 0.8)",
+                cardBg: "rgba(15, 23, 42, 0.4)",
+                textColor: "#f8fafc",
+                icon: "🌙"
+            };
+            const lightTheme = {
+                bodyBg: "linear-gradient(135deg, #f1f5f9 0%, #e0f2fe 25%, #bae6fd 50%, #7dd3fc 75%, #e0f7ff 100%)",
+                headerBg: "rgb(144, 209, 247)",
+                cardBg: "rgba(255,255,255,0.7)",
+                textColor: "#0f172a",
+                icon: "☀️"
+            };
+
+            function setTheme(theme) {
+                document.body.style.background = theme.bodyBg;
+                document.querySelector('.header').style.background = theme.headerBg;
+                document.querySelectorAll('.glass-card, .course-card').forEach(card => {
+                    card.style.background = theme.cardBg;
+                    card.style.color = theme.textColor;
+                });
+                document.querySelectorAll('.section-title, .logo, .footer-logo-text').forEach(el => {
+                    el.style.color = theme.textColor;
+                });
+                themeIcon.textContent = theme.icon;
+                document.body.setAttribute('data-theme', theme.icon === "🌙" ? "dark" : "light");
+            }
+
+            // Toggle theme on button click
+            themeToggle.addEventListener("click", function () {
+                const isDark = document.body.getAttribute('data-theme') !== "light";
+                setTheme(isDark ? lightTheme : darkTheme);
+            });
+
+            // Optional: Set initial theme based on system preference
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme(darkTheme);
+            } else {
+                setTheme(lightTheme);
+            }
+        });
+    </script>
+</body>
+
+</html>

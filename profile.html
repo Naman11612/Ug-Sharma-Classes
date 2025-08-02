@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border: 3px solid #2da0a8;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #2e3a59;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0.3rem 0;
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn.edit {
+      background-color: #2979ff;
+      color: white;
+    }
+
+    .btn.logout {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .btn.delete {
+      background-color: #ff9800;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: scale(1.04);
+    }
+
+    .loading {
+      font-size: 1rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="https://i.ibb.co/0jqHpnp/default-profile.png" alt="Profile" class="profile-pic" id="profile-pic" />
+    <h2 id="user-name">Loading...</h2>
+    <p><strong>Email:</strong> <span id="user-email">...</span></p>
+    <p><strong>Phone:</strong> <span id="user-phone">...</span></p>
+
+    <div class="buttons">
+      <button class="btn edit">Edit Profile</button>
+      <button class="btn logout" onclick="logout()">Logout</button>
+      <button class="btn delete" onclick="confirmDelete()">Delete Account</button>
+    </div>
+    <p class="loading" id="loading-text">Fetching data...</p>
+  </div>
+
+ <script>
+  const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbxUIhOvBDk2imOr81RPN9So3bHg2_XB8rsfw4w86yXyKrlOniUfklUmXuAmc8B9uD6N/exec';
+  const email = localStorage.getItem("userEmail");
+
+  if (!email) {
+    alert("User not logged in.");
+    window.location.href = "/enroll page.html";
+  } else {
+    fetch(`${SHEET_API_URL}?email=${encodeURIComponent(email)}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log("Fetched user data:", data); // ✅ Added log for debugging
+
+        if (data.status === "success") {
+          document.getElementById("user-name").innerText = data.user.Name;
+          document.getElementById("user-email").innerText = data.user.Email;
+          document.getElementById("user-phone").innerText = data.user.Number;
+          document.getElementById("loading-text").style.display = "none";
+        } else {
+          document.getElementById("loading-text").innerText = "User not found.";
+        }
+      })
+      .catch(err => {
+        console.error("Error fetching profile:", err);
+        document.getElementById("loading-text").innerText = "Error loading profile.";
+      });
+  }
+
+  function logout() {
+    localStorage.removeItem("userEmail");
+    window.location.href = "/enroll page.html";
+  }
+
+  function confirmDelete() {
+    if (confirm("Are you sure you want to delete your account?")) {
+      fetch(`${SHEET_API_URL}?action=delete&email=${encodeURIComponent(email)}`, {
+        method: "POST"
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (data.status === "success") {
+            alert("Account deleted.");
+            logout();
+          } else {
+            alert("Error deleting account.");
+          }
+        })
+        .catch(() => alert("Failed to delete account."));
+    }
+  }
+</script>
+</body>
+
+</html>
