@@ -26,8 +26,7 @@ We specialize in teaching **HTML, CSS, and JavaScript**, focusing on **Responsiv
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](https://yourimage.link)
-![Landing Page Screenshot](https://yourimage.link)
+![Landing Page Screenshot](images/UG%20Screenshot.png)
 
 ---
 
